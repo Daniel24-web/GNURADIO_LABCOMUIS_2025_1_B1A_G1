@@ -1,43 +1,22 @@
 # Laboratorio de Comunicaciones
 ## Universidad Industrial de Santander
 
-Utilice esta [plantilla](#integrantes) para presentar sus informes de laboratorio. 
-
-Al final de la plantilla encontrará algunos ejemplos para enriquecer su informe, incluyendo cómo insertar imágenes, tablas y ecuaciones, así como generar hipervínculos a su repositorio o al propio informe. Ir a [ejemplos en Markdown](#ejemplos-usando-markdown)
-
-### Importante
-
-- En caso de utilizar herramientas de Inteligencia Artificial para asistencia en la redacción, análisis o cualquier otra tarea, de debe especificar en la sección de **Declaración de Originalidad y Responsabilidad** aclarando el alcance y propósito de su uso.
-- Cualquier omisión en la declaración del uso de IA o la presentación de contenido plagiado será penalizado con nota de 0.0 y reporte a la coordinación del programa.
-- Si emplea referencias disponibles en línea, agregue los hipervínculos respectivos.  
-
----
 # Práctica 1: TÍTULO PRÁCTICA
 
 ### Integrantes
-- **PRIMER INTEGRANTE** - Código
-- **SEGUNDO INTEGRANTE** - Código
+- **OSCAR DANIEL CASTELLANOS MARIÑO** - 2
+- **JUAN CAMILO GONZALEZ LEAL** - 2184682
 
 Escuela de Ingenierías Eléctrica, Electrónica y de Telecomunicaciones  
 Universidad Industrial de Santander
 
 ### Fecha
-31 de diciembre de 2030
+07 de marzo de 2025
 
 ---
-
-## Declaración de Originalidad y Responsabilidad
-Los autores de este informe certifican que el contenido aquí presentado es original y ha sido elaborado de manera independiente. Se han utilizado fuentes externas únicamente como referencia y han sido debidamente citadas.
-
-Asimismo, los autores asumen plena responsabilidad por la información contenida en este documento. 
-
-Uso de IA: [Indicar si se usó IA y para qué aspectos específicos, por ejemplo: "Se utilizó ChatGPT para reformular secciones del texto y verificar gramática, pero el contenido técnico fue desarrollado íntegramente por los autores."]
-
----
-## Contenido
-
+### PRACTICA 1A
 ### Resumen
-Descripción en no más de 150 palabras del contenido de la práctica. Debe ser conciso y brindar una idea clara sobre el trabajo realizado y sus conclusiones.
+Durante la práctica, se demostró el teorema de Nyquist, que vincula la frecuencia de muestreo con la señal para evitar el aliasing. Se utilizaron señales senoidales y cuadradas para ejemplificar los efectos del muestreo. Con GNU Radio, se diseñaron diagramas de bloques para procesar señales de audio. Se resaltó la necesidad de que la frecuencia de muestreo sea al menos el doble del ancho de banda de la señal.
 
 **Palabras clave:** de 2 a 5 palabras clave. 
 
@@ -61,6 +40,8 @@ Debe basarse en las acciones efectivamente realizadas durante el laboratorio, de
 - ¿Qué le sucede a una señal de audio cuando no se respeta el teorema de Nyquist?
 - Describa las funciones logradas con el Ecualizador desarrollado con GNURadio.
 
+![Networking](parte_a/coseno1.png)
+
 ### Conclusiones
 Se sintetizan los principales aportes y puntos relevantes de la práctica, evitando repetir lo ya consignado en las otras secciones del informe. 
 
@@ -68,6 +49,18 @@ Se sintetizan los principales aportes y puntos relevantes de la práctica, evita
 Ejemplo de referencia:
 
 - [Proakis, 2014] J. Proakis, M. Salehi. Fundamentals of communication systems. 2 ed. England: Pearson Education Limited, 2014. p. 164-165, 346. Chapter 5 In: [Biblioteca UIS](https://uis.primo.exlibrisgroup.com/permalink/57UIDS_INST/63p0of/cdi_askewsholts_vlebooks_9781292015699)
+
+
+### PRACTICA 1B
+
+
+
+
+
+
+
+### PRACTICA 1C
+
 
 ---
 # Ejemplos usando Markdown
@@ -125,6 +118,4 @@ def hello_world():
 
 También es posible resaltar texto tipo código como `print("Hello, World!")`.
 
----
 
-Volver al [INICIO](#laboratorio-de-comunicaciones)
