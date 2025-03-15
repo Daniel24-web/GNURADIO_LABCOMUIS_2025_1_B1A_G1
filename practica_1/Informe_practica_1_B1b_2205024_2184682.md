@@ -232,119 +232,234 @@ Se realizó la mediciones de piso ruido, quedando como evidencia las siguientes 
 
 ### Actividad 2: Simulación de Señales en GNU Radio
 
-
-Objetivo
+### **Objetivo**
 Generar y analizar señales en GNU Radio para entender cómo se comportan diferentes formas de onda en tiempo y frecuencia.
 
-Procedimiento
-Iniciar GNU Radio:
+### **Procedimiento**
 
-Ejecute GNU Radio Companion (GRC) (gnuradio-companion).
-Cargue el flujograma simple_flowgraph.grc.
-Identifique los bloques principales: Signal Source, Throttle, QT GUI Time Sink y QT GUI Frequency Sink.
-Configure la frecuencia de muestreo (samp_rate) en 20 kHz.
-Ejecutar el Flujograma:
+  
+1. **Análisis de Señales** 
+   - Analice y valide los resultados en el dominio del tiempo y de frecuencia si se modifica:
+     
+***El tipo de dato de la fuente (compleja o flotante)***
+  
+ Cuando se tiene el tipo de dato en *float* lo que se logra es generar una señal real sin componente imaginaria, por lo cual en el dominio del tiempo solo se observa una senosoidal y en el dominio de la frecuencia se observa un solo pico.
 
-Ejecute el flujograma y observe los diferentes controles (Source Controls, Channel Controls, USRP Controls), así como las señales generadas en las ventanas de tiempo (Time Sink) y frecuencia (Frequency Sink).
-Identifique y relacione los bloques presentes en el flujograma con lo observado en la ventana de ejecución.
-Análisis de Señales
+Al tener el tipo de dato en *complex*, en el dominio del tiempo se pueden observar dos señales las cuales corresponden a la parte real e imaginaria de la misma y en el dominio de la frecuencia, se pueden observar dos picos debido a la modulacion en frecuencia.
 
-Analice y valide los resultados en el dominio del tiempo y de frecuencia si se modifica:
-el tipo de dato de la fuente (compleja o flotante)
-la forma de onda
-la frecuencia y fase de la señal
-la amplitud de la señal generada.
-Modifique el nivel de ruido del modelo de canal y analice el efecto en tiempo y frecuencia.
-Preguntas Orientadoras
-¿Cómo se puede explicar matemáticamente la diferencia entre una fuente de tipo flotante y una de tipo complejo?
-¿Cómo afecta la forma de onda a la distribución de energía (potencia) en el dominio de la frecuencia?
-¿Qué sucede con la señal en el dominio del tiempo y la frecuencia si se modifican los diferentes parámetros de la fuente? ¿Lo observado corresponde a lo esperado teóricamente?
-¿Cómo se relaciona la amplitud de la señal con la potencia observada en el dominio de la frecuencia?
-¿Qué diferencias se observan entre una señal senoidal y una señal cuadrada en el dominio de la frecuencia?
-Evidencias
-Capturas de pantalla de señales generadas en el dominio del tiempo y la frecuencia que evidencien cada una de las comparaciones realizadas.
+***la forma de onda***
+
+Al cambiar la forma de onda en el dominio del tiempo se nota cual es el tipo esperado, en el dominio de la frecuencia para los tipos de senales se observan sus armonicos.
+
+***la frecuencia, fase de la señal y amplitud***
+| | |
+|-----|------|
+| Frecuencia | Al cambia esta en el tiempo se observa como se repite mas veces, en la frecuencia los picos se desplazan hacia la frecuencia que se esta utilizando |
+| Fase | Cambia el punto de inicio de la onda |
+| Amplitud | En el tiempo varia la amplitud de la señal mientras que en la frecuencia la altura del pico aumentara o disminuira dependiendo de la misma |
+
+   - Modifique el nivel de ruido del modelo de canal y analice el efecto en tiempo y frecuencia.
+
+Para la señal en el dominio del tiempo se observa como esta comienza a tener una mayor dispersion oscilacion al ir aumentando el ruido, cosa que nos esta aumentando la relacion señal a ruido, ahora en el dominio del tiempo lo que se produce es un aumento en el piso de ruido lo que hace que la señal sea menos definida.
+
+Acontinuacion se muestran las imagenes tomadas en el laboratorio.
+
+| Tipo | Simulacion |
+|-----|------|
+| Compleja | <img src="parte_c/Actividad_2/compleja.jpg" width="300"> |
+| Flotante | <img src="parte_c/Actividad_2/flotante.jpg" width="300"> |
+| Compleja con offset | <img src="parte_c/Actividad_2/compleja_con_offset.jpg" width="300"> |
+| Compleja con offset y cambio de frecuencia | <img src="parte_c/Actividad_2/compleja_variando_frecuencia_offset.jpg" width="300"> |
+| Compleja sin offset y cambio de frecuencia | <img src="parte_c/Actividad_2/5_Aumento_frecuencia_sin_offset.jpg" width="300"> |
+| Añadiendo ruido a una señal compleja | <img src="parte_c/Actividad_2/6_añadiendo_ruido_compleja.jpg" width="300"> |
+| Añadiendo ruido a una señal flotante | <img src="parte_c/Actividad_2/8_flotante_con_ruido.jpg" width="300"> |
+| Compleja con ruido y cambio de fase | <img src="parte_c/Actividad_2/9_compleja_ruido_carrier_cambio_de_fase.jpg" width="300"> |
+| Compleja con aumento de amplitud | <img src="parte_c/Actividad_2/10_compleja_amplituda_cambiada_fase_ruido_carrier.jpg" width="300"> |
+| Compleja menor amplitud y ruido | <img src="parte_c/Actividad_2/11_compleja_menor_amplitud_ruido_fase_carrier_frecuencia.jpg" width="300"> |
+| Flotante con cambio de amplitud | <img src="parte_c/Actividad_2/12_flotante_amplitud_0.4.jpg" width="300"> |
+| Seno con ruido | <img src="parte_c/Actividad_2/13_seno.jpg" width="300"> |
+| Cuadrada | <img src="parte_c/Actividad_2/14_cuadrada.jpg" width="300"> |
+
+### **Preguntas Orientadoras**
+1. ¿Cómo se puede explicar matemáticamente la diferencia entre una fuente de tipo flotante y una de tipo complejo?
+
+| Matematicamente | |
+|---|---|
+| Float | s(t) = A \cos(2\pi f t + \phi) |
+| Complex | s(t) = A \cos(2\pi f t + \phi) + j A \sin(2\pi f t + \phi) |
+   
+3. ¿Cómo afecta la forma de onda a la distribución de energía (potencia) en el dominio de la frecuencia?
+
+Para una senosoidal toda la energia se concentra en una sola frecuencia observando de esta manera en espectro un solo pico.
+Una señal cuadrada y triangular en el dominio de la frecuencia aparecen armonico.
+   
+5. ¿Qué sucede con la señal en el dominio del tiempo y la frecuencia si se modifican los diferentes parámetros de la fuente? ¿Lo observado corresponde a lo esperado teóricamente?
+
+| Se modifican los parametros | |
+|---|---|
+| Frecuencia | En el tiempo aumentan la cantidad de ciclos y en el dom. freq. se desplaza el pico del espectro a la nueva frecuencia |
+| Fase | En el tiempo cambia la posicion sin cambiar la forma de onda y en la frecuencia solo cambia su fase mas no su magnitud |
+| Amplitud | En el tiempo cambia su tamaño y en la frecuencia su potencia espectral crecen proporcionalmente a A^2 |
+
+7. ¿Qué diferencias se observan entre una señal senoidal y una señal cuadrada en el dominio de la frecuencia?
+
+| Caracteristica | Señal senoidal | Señal cuadrada |
+|---|---|---|
+| Dominio del tiempo  | Onda suave y continua  | Onda con transiciones abruptas  |
+| Dominio de la frecuencia  | Un solo pico en *f*  | Pico en *f* y armonicos impares en *3f*, *5f*, *7f*...  |
+| Contenido espectral  | Energia concentrada en una frecuencia  | Energia distribuida en multiples frecuencias  |
+| Aplicaciones  | Modulacion de señales  | Electronica digital  |
 
 
-### Actividad 3: Transmisión y Medición de Señales con el USRP 2920
+## **Actividad 3: Transmisión y Medición de Señales con el USRP 2920**
 
-
-Objetivo
+### **Objetivo**
 Transmitir señales usando el USRP 2920 y medir parámetros clave como potencia, ancho de banda, piso de ruido y relación señal a ruido (SNR).
 
-Procedimiento
-Configurar el USRP 2920:
+### **Procedimiento**
+1. **Configurar el USRP 2920**:
+   - Configure el flujograma en GNU Radio para transmitir una señal a través del USRP. Habilite o deshabilite los bloques correspondientes (Channel Model, Throttle, UHD: USRP Sink, Virtual Sink). Para esto seleccione el bloque deseado y presionando `E` (enable) o `D` (disable), respectivamente.
+   - Identifique el bloque de frecuencia de muestreo (samp_rate) y observe el efecto de cambiar su valor (e.g. 10 kHz).
+   - Configure la frecuencia de muestreo (samp_rate) en 1 MHz.
+   - Verifique el efecto de modificar la frecuencia y ganancia del USRP. 
 
-Configure el flujograma en GNU Radio para transmitir una señal a través del USRP. Habilite o deshabilite los bloques correspondientes (Channel Model, Throttle, UHD: USRP Sink, Virtual Sink). Para esto seleccione el bloque deseado y presionando E (enable) o D (disable), respectivamente.
-Identifique el bloque de frecuencia de muestreo (samp_rate) y observe el efecto de cambiar su valor (e.g. 10 kHz).
-Configure la frecuencia de muestreo (samp_rate) en 1 MHz.
-Verifique el efecto de modificar la frecuencia y ganancia del USRP.
-Medición con el Analizador de Espectros:
+Se realiza la configuracion dandonos como resultado la evidencia:
 
-Conecte la salida del USRP al analizador de espectros.
-Mida el piso de ruido normalizado a la frecuencia de portadora que va a utilizar.
-Compare el espectro de la señal observada en el analizador de espectros con la observada en la pantalla de simulación. Tenga en cuenta que el radio (USRP) equivale al diagrama de bloques mostrado en la figura.
-QAM Modulator
-
-Analice y valide los resultados en el dominio de la frecuencia si se modifica:
-el tipo de dato de la fuente (compleja o flotante)
-la forma de onda
-la frecuencia y fase de la señal
-la amplitud de la señal generada.
-Mida potencia de la señal transmitida y ancho de banda de diferentes señales generadas.
-Conecte una antena apropiada a la entrada del analizador de espectros y observe el espectro de una señal FM (las estaciones FM se sitúan entre los 88 MHz y 108 MHz). Mida su ancho de banda y relación señal a ruido.
-Determinar la máxima potencia de transmisión.
-Evalúe la respuesta en frecuencia del canal midiendo los cambios de ganancia del sistema cuando varía la frecuencia de portadora.
-Compare los resultados de transmitir usando un cable y usando antenas.
-Medición con el Osciloscopio:
-Analice y valide los resultados en el dominio del tiempo si se modifica:
-el tipo de dato de la fuente (compleja o flotante)
-la forma de onda
-la frecuencia y fase de la señal
-la amplitud de la señal generada.
-Contraste estos resultados con los obtenidos con el analizador de espectros.
-Cálculo de la Relación Señal a Ruido (SNR):
-Usar las mediciones de potencia y piso de ruido para calcular la SNR de algunas de las señales generadas.
-Anotar el valor de la SNR en dB.
-Preguntas Orientadoras
-¿Cómo se configura el USRP 2920 para transmitir una señal en una frecuencia específica?
-¿Qué parámetros del flujograma afectan la potencia de la señal transmitida?
-¿Cómo se mide el ancho de banda de la señal transmitida en el analizador de espectros?
-¿Cómo se calcula la relación señal a ruido (SNR) a partir de las mediciones de potencia y piso de ruido?
-¿Qué diferencias se observan en las mediciones de potencia cuando se varía la ganancia del USRP?
-¿Es posible medir o estimar la potencia de la señal observada en el osciloscopio? ¿Por qué?
-Evidencia
-Capturas de pantalla de señales generadas en el dominio del tiempo y la frecuencia que evidencien las principales comparaciones realizadas.
-Captura de la señal FM usada para medición de ancho de banda.
+| | |
+|---|---|
+| ganancia_a_10dB | <img src="parte_c/Actividad_3/1_configuracion/ganancia_a_10dB.jpg" width="300"> |
+| ganancia_a_10dB_samp_rate_1MHz | <img src="parte_c/Actividad_3/1_configuracion/ganancia_a_10dB_samp_rate_1MHz.jpg" width="300"> |
+| original_2000Hz | <img src="parte_c/Actividad_3/1_configuracion/original_2000Hz.jpg" width="300"> |
+| original_a_1000Hz | <img src="parte_c/Actividad_3/1_configuracion/original_a_1000Hz.jpg" width="300"> |
+| samp_rate_a_1MHz | <img src="parte_c/Actividad_3/1_configuracion/samp_rate_a_1MHz.jpg" width="300"> |
 
 
-### Actividad 4: Análisis de Resultados y Conclusiones
+
+2. **Medición con el Analizador de Espectros**:
 
 
-Objetivo
+   - Mida el piso de ruido normalizado a la frecuencia de portadora que va a utilizar.
+  
+| Piso de ruido | |
+|---|---|
+| Medicion piso ruido 800MHz | <img src="parte_c/Actividad_3/2_pisoruido/1_medir_pisoruido_800MHz_aprox_6dB.jpg" width="300"> |
+| Medicion piso de ruido ref -20 | <img src="parte_c/Actividad_3/2_pisoruido/2_pisoruido_ref-20_en_simulador_0.jpg" width="300"> |
+| Piso de ruido minimo | <img src="parte_c/Actividad_3/2_pisoruido/3_pisoruido_minimo.jpg" width="300"> |
+| Medicion piso ruido maximo | <img src="parte_c/Actividad_3/2_pisoruido/4_pisoruido_maximo.jpg" width="300"> |
+| Piso de ruido normalizado | <img src="parte_c/Actividad_3/2_pisoruido/5_pisoruido_normalizado.jpg" width="300"> |
+
+
+     
+   - Analice y valide los resultados en el dominio de la frecuencia si se modifica:
+     - el tipo de dato de la fuente (compleja o flotante)
+     - la forma de onda 
+     - la frecuencia y fase de la señal
+     - la amplitud de la señal generada.
+
+<img src="parte_c/Actividad_3/3_variaciones/1.jpg" width="300">
+<img src="parte_c/Actividad_3/3_variaciones/2.jpg" width="300">
+<img src="parte_c/Actividad_3/3_variaciones/3.jpg" width="300">
+<img src="parte_c/Actividad_3/3_variaciones/4.jpg" width="300">
+<img src="parte_c/Actividad_3/3_variaciones/5.jpg" width="300">
+<img src="parte_c/Actividad_3/3_variaciones/6.jpg" width="300">
+<img src="parte_c/Actividad_3/3_variaciones/7.jpg" width="300">
+  
+ 
+   - Mida potencia de la señal transmitida y ancho de banda de diferentes señales generadas.
+   - Conecte una antena apropiada a la entrada del analizador de espectros y observe el espectro de una señal FM (las estaciones FM se sitúan entre los 88 MHz y 108 MHz). Mida su ancho de banda y relación señal a ruido. 
+   - Determinar la máxima potencia de transmisión.
+
+| | |
+|---|---|
+| ampliando_freq_muestreo | <img src="parte_c/Actividad_3/4_med_potencia/ampliando_freq_muestreo.jpg" width="300"> |
+| con_antena | <img src="parte_c/Actividad_3/4_med_potencia/con_antena.jpg" width="300"> |
+| sin_antena | <img src="parte_c/Actividad_3/4_med_potencia/sin_antena.jpg" width="300"> |
+| sintonizando | <img src="parte_c/Actividad_3/4_med_potencia/sintonizando.jpg" width="300"> |
+| sintonizando_frecuencia | <img src="parte_c/Actividad_3/4_med_potencia/sintonizando_frecuencia.jpg" width="300"> |
+| transmicion | <img src="parte_c/Actividad_3/4_med_potencia/transmicion.jpg" width="300"> |
+
+
+   - Evalúe la respuesta en frecuencia del canal midiendo los cambios de ganancia del sistema cuando varía la frecuencia de portadora.
+
+<img src="parte_c/Actividad_3/5_respuesta en frecuencia del canal/1.jpg" width="300">
+<img src="parte_c/Actividad_3/5_respuesta en frecuencia del canal/2.jpg" width="300">
+<img src="parte_c/Actividad_3/5_respuesta en frecuencia del canal/3.jpg" width="300">
+<img src="parte_c/Actividad_3/5_respuesta en frecuencia del canal/4.jpg" width="300">
+<img src="parte_c/Actividad_3/5_respuesta en frecuencia del canal/5.jpg" width="300">
+<img src="parte_c/Actividad_3/5_respuesta en frecuencia del canal/6.jpg" width="300">
+<img src="parte_c/Actividad_3/5_respuesta en frecuencia del canal/7.jpg" width="300">
+<img src="parte_c/Actividad_3/5_respuesta en frecuencia del canal/8.jpg" width="300">
+
+4. **Medición con el Osciloscopio**:
+
+<img src="parte_c/Actividad_3/6_medidas de osciloscopio/1.jpg" width="300">
+<img src="parte_c/Actividad_3/6_medidas de osciloscopio/2.jpg" width="300">
+<img src="parte_c/Actividad_3/6_medidas de osciloscopio/3.jpg" width="300">
+<img src="parte_c/Actividad_3/6_medidas de osciloscopio/4.jpg" width="300">
+<img src="parte_c/Actividad_3/6_medidas de osciloscopio/5.jpg" width="300">
+<img src="parte_c/Actividad_3/6_medidas de osciloscopio/6.jpg" width="300">
+<img src="parte_c/Actividad_3/6_medidas de osciloscopio/7.jpg" width="300">
+<img src="parte_c/Actividad_3/6_medidas de osciloscopio/8.jpg" width="300">
+<img src="parte_c/Actividad_3/6_medidas de osciloscopio/9.jpg" width="300">
+<img src="parte_c/Actividad_3/6_medidas de osciloscopio/10.jpg" width="300">
+<img src="parte_c/Actividad_3/6_medidas de osciloscopio/11.jpg" width="300">
+<img src="parte_c/Actividad_3/6_medidas de osciloscopio/12.jpg" width="300">
+<img src="parte_c/Actividad_3/6_medidas de osciloscopio/13.jpg" width="300">
+<img src="parte_c/Actividad_3/6_medidas de osciloscopio/14.jpg" width="300">
+
+
+
+### **Preguntas Orientadoras**
+1. ¿Cómo se configura el USRP 2920 para transmitir una señal en una frecuencia específica?
+
+Para configurar el USRP 2920 y transmitir una señal en una frecuencia específica, es necesario ajustar varios parámetros clave en GNU Radio. Primero, se debe establecer la frecuencia central, que define la frecuencia portadora de la señal a transmitir, luego se configura la ganancia de transmisión, que ajusta la potencia de salida del USRP.
+
+2. ¿Qué parámetros del flujograma afectan la potencia de la señal transmitida?
+
+Uno de los más importantes es la ganancia de transmisión, que controla el nivel de amplificación aplicado a la señal antes de su transmisión. Otro parámetro relevante es la amplitud de la señal baseband generada en el software, ya que señales de mayor amplitud producirán una mayor potencia de transmisión.
+
+3. ¿Cómo se mide el ancho de banda de la señal transmitida en el analizador de espectros?
+
+se establece la frecuencia central en la misma frecuencia de transmisión del USRP, se ajusta el SPAN (ancho de frecuencia visible) para asegurarse de que toda la señal quede dentro de la pantalla del analizador. Un parámetro clave es la RBW (Resolution Bandwidth), que determina la resolución espectral de la medición.
+
+4. ¿Qué diferencias se observan en las mediciones de potencia cuando se varía la ganancia del USRP?
+
+Al aumentar la ganancia de transmisión en el USRP, la potencia de la señal medida en el analizador de espectros también aumenta proporcionalmente. Sin embargo, si la ganancia es demasiado alta, pueden aparecer efectos no deseados como distorsión no lineal y saturación del amplificador, lo que genera armónicos y productos de intermodulación en el espectro.
+
+5. ¿Es posible medir o estimar la potencia de la señal observada en el osciloscopio? ¿Por qué?
+
+Sí, es posible estimar la potencia de una señal utilizando un osciloscopio, pero con ciertas limitaciones. La potencia puede calcularse a partir del voltaje pico a pico o voltaje RMS medido en la pantalla del osciloscopio y la impedancia del sistema
+
+## **Actividad 4: Análisis de Resultados y Conclusiones**
+
+### **Objetivo**
 Analizar los resultados obtenidos y sacar conclusiones sobre el comportamiento de las señales en diferentes condiciones para elaborar el informe.
 
-Para la Elaboración del Informe
-Comparar Resultados:
+### **Preguntas Orientadoras**
+1. ¿Qué conclusiones se pueden obtener sobre la relación entre la potencia de la señal y la calidad de la comunicación?
 
-Compare los resultados obtenidos en las simulaciones y las transmisiones reales.
-Discuta las diferencias entre las mediciones realizadas con el osciloscopio y el analizador de espectros.
-Reflexionar sobre la SNR:
+La potencia de la señal juega un papel crucial en la calidad de la comunicación, ya que determina la relación señal a ruido (SNR) y, por lo tanto, la capacidad del receptor para detectar e interpretar la información transmitida.
 
-Analice la importancia de la relación señal a ruido (SNR) en las comunicaciones inalámbricas.
-Discuta cómo el piso de ruido afecta la capacidad de detectar señales débiles.
-Conclusiones Finales:
+2. ¿Cómo afecta el piso de ruido a la capacidad de detectar señales débiles?
 
-Escriba conclusiones basadas en los resultados obtenidos.
-Reflexe sobre las limitaciones de los equipos y cómo se podrían mejorar las mediciones.
-Preguntas Orientadoras
-¿Qué conclusiones se pueden obtener sobre la relación entre la potencia de la señal y la calidad de la comunicación?
-¿Cómo afecta el piso de ruido a la capacidad de detectar señales débiles?
-¿Qué limitaciones tienen los equipos utilizados en términos de ancho de banda y precisión en las mediciones?
-¿Cómo se pueden mejorar las mediciones de señal en un entorno con alto nivel de ruido?
-¿Qué aplicaciones prácticas tienen las mediciones de potencia y ancho de banda en sistemas de comunicaciones reales?
-¿Cómo se puede medir la respuesta en frecuencia de un canal alámbrico?
-¿Cómo se puede obtener un modelo sencillo de las pérdidas (pathloss) en un canal inalámbrico?
+Si una señal tiene una potencia cercana o inferior al piso de ruido, será difícil de detectar, ya que se mezclará con el ruido de fondo, un piso de ruido bajo permite detectar señales más débiles con mayor precisión, mientras que un piso de ruido alto limita la sensibilidad del receptor y reduce la capacidad de recibir señales de baja potencia sin errores.
+
+3. ¿Qué limitaciones tienen los equipos utilizados en términos de ancho de banda y precisión en las mediciones?
+
+Los equipos de medición como osciloscopios, analizadores de espectros y radios definidas por software (SDR) tienen limitaciones en ancho de banda y precisión.
+
+4. ¿Cómo se pueden mejorar las mediciones de señal en un entorno con alto nivel de ruido?
+
+Una opción es reducir el ancho de banda de resolución (RBW) en un analizador de espectros, lo que permite una mejor discriminación de señales débiles, se pueden utilizar filtros pasa-banda para eliminar componentes de ruido fuera de la banda de interés. 
+
+5. ¿Qué aplicaciones prácticas tienen las mediciones de potencia y ancho de banda en sistemas de comunicaciones reales?
+
+En telecomunicaciones, permite ajustar la potencia de transmisión para cumplir con regulaciones y evitar interferencias. En radiofrecuencia, es clave para evaluar la ocupación del espectro y optimizar el uso de bandas. En sistemas inalámbricos, ayuda a garantizar la calidad del servicio ajustando el ancho de banda de transmisión según las condiciones del canal.
+
+6. ¿Cómo se puede medir la respuesta en frecuencia de un canal alámbrico?
+
+La respuesta en frecuencia de un canal alámbrico se puede medir inyectando una señal de barrido de frecuencia (sweep) en la entrada del canal y analizando la señal recibida en la salida, esto se puede hacer con un analizador de redes o con un generador de señales y un analizador de espectros, la diferencia en amplitud y fase entre la señal transmitida y la recibida en función de la frecuencia proporciona la respuesta del canal.
 
 
 
----
+
