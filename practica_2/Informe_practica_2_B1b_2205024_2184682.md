@@ -34,35 +34,27 @@ Para esta practica tomamos n=6 y configuramos la simulacion y hardware de acuerd
 
    ### Preguntas Orientadoras
 
-**-¿Cuál es el efecto del ruido sobre la amplitud de las señales medidas en el osciloscopio? ¿Conservan las mismas relaciones que se evidencian en la simulación?**
+**-¿Cuál es el efecto del ruido sobre la amplitud de las señales medidas en el osciloscopio? ¿Conservan las mismas relaciones que se evidencian en la simulación?:**
 El efeco el cual logramos identificar en la amplitud es que al inducir ruido artificial a la señal a travez del programa, en nuestro osciloscopio la amplitud aumentaba al igual que en el simulador por lo tanto si conserva las mismas relaciones. 
 como se evidencia su amplitud aumenta un delta, por eso pusimos 2 marcadores para saber cuanto aumentaba este delta, en este caso 180.44 mv
 
 | Señal | Señal sin ruido (simulador) | Señal sin ruido (osciloscopio) | Señal con ruido (simulador)| Señal con ruido (osciloscopio) |
-|-------|----------------------|--------------------------------|----------------------------|--------------------------------|
+|-------|----------------------|--------------------------------|----------------------------|---------------------------------------|
 | TRIANGULAR | <img src="Actividad_2/4_1_triangular_sin_ruido.jpg" width="300"> | <img src="Actividad_2/4_2_triangular_sin_ruido.jpg" width="300"> | <img src="Actividad_2/5_1_triangular_con_ruido.jpg" width="300"> | <img src="Actividad_2/5_2_triangular_con_ruido.jpg" width="300"> |
 
+**¿La relación señal a ruido creada intencionalmente en el computador se amplifica o se reduce en la señal observada en el osciloscopio?:** La relacion señal a ruido creada desde el simulador se vera menor o sea se reduce y en el osciloscopio se peor o se identifica menos ya que el ruido intenta ser parte de la señal. en la siguiente pregunta se ve como se mejora la imagen de la señal a partir de una señal que no se podria identificar por el ruido 
 
+**Demuestre ¿cómo se puede mejorar la relación señal a ruido en una señal?:** La relacion señal a ruido se puede mejorar al aumentar su amplitud desde el simulador ya que si aumento la amplitud directamente aumenta la potencia de la señal y se podra identificar mejor ya que la potencia de la señal es proporcional al cuadrado de la amplitud. para nuestro caso lo mejoramos con una amplitud de 0.3
 
+| Señal | Señal con ruido (simulador) | Señal con ruido (osciloscopio) | Señal con ruido mejorada (simulador)| Señal con ruido mejorada (osciloscopio) |
+|-------|-----------------------------|--------------------------------|-------------------------------------|-----------------------------------------|
+| TRIANGULAR | <img src="Actividad_2/7_ruido.jpg" width="300"> | <img src="Actividad_2/6.jpg" width="300"> | <img src="Actividad_2/9_ruido _amplitud 0_3.jpg" width="300"> | <img src="Actividad_2/8.jpg" width="300"> |
 
+**¿Cómo se evidencia el fenómeno de desviación de frecuencia en el osciloscopio? Evidenciar al menos con dos formas de onda:** Lo que se logra evidenciar de este fenomeno es que la señal al aumentar esta desviacion de frecuencia aumenta un poco sus picos por lo tanto aumento su amplitud muy poco pero se bede a que la señal se comprime o se expande un poco debido a la desviacion de frecuencia 
 
-
-
-**¿La relación señal a ruido creada intencionalmente en el computador se amplifica o se reduce en la señal observada en el osciloscopio?**
-
-
-
-
-
-**Demuestre ¿cómo se puede mejorar la relación señal a ruido en una señal?**
-
-
-
-
-
-
-
-**¿Cómo se evidencia el fenómeno de desviación de frecuencia en el osciloscopio? Evidenciar al menos con dos formas de onda.**
+| Señal | Señal sin desviacion (simulador) | Señal sin desviacion (osciloscopio) | Señal con desviacion (simulador)| Señal con desviacion (osciloscopio) |
+|-------|----------------------------------|-------------------------------------|---------------------------------|-------------------------------------|
+| CUADRADA | <img src="Actividad_2/10_1 _sin_variar_ frecuencia.jpg" width="300"> | <img src="Actividad_2/10_2 sin_variar_frecuencia.jpg" width="300"> | <img src="Actividad_2/11_1 frecuencia_20_offset.jpg" width="300"> | <img src="Actividad_2/11_2_frecuencia 20_offset.jpg" width="300"> |
 
 
 
