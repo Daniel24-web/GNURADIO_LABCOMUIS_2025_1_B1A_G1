@@ -61,10 +61,13 @@ como se evidencia su amplitud aumenta un delta, por eso pusimos 2 marcadores par
 
 **Determine la afectación de un medio de transmisión coaxial (usar cables largos) sobre una señal periódica operando a las capacidades máximas de muestreo del USRP.**
   - **NOTA:** La frecuencia de transmisión no debe superar los 500 MHz para ser observada en el osciloscopio. Para el experimento, considere las relaciones de muestreo correspondientes.
-**Usando cables coaxiales de diferentes longitudes, ¿cómo afecta la distancia entre el transmisor y el receptor a la amplitud de la señal medida?**
+**Usando cables coaxiales de diferentes longitudes, ¿cómo afecta la distancia entre el transmisor y el receptor a la amplitud de la señal medida?:**  Las capacidades maximas de muestreo para nuestro USRP son de 450 MHz. para esto configuramos la frecuecnia carrier en 450 MHz usamos primero un cable corto de aproximadamente de 60 cm t en el otro caso usamos uno largo de aproximadamente de 27 metros.
+Esta distancia atenua la señal entre el trasmisor y receptor reduciendo la amplitud de la señal, aplanando mas la señal y siedno un poco mas dificl de analizarla.
+Entonces podemos concluir que la afectacion del medio de trasmision afecta directamente la amplitud de la señal entre mas argo sea mas la atenuara 
 
-
-
+| Señal con cable corto | Señal con cable largo |
+|-----------------------|-----------------------|
+| <img src="Actividad_2/14_potencia_cable_normal.jpg" width="300"> | <img src="Actividad_2/15_potencia_cable_largo.jpg" width="300"> |
 
 
 
