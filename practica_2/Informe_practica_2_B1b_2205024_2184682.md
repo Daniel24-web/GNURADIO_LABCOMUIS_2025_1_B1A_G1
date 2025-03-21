@@ -1,17 +1,4 @@
-# Laboratorio de Comunicaciones
-## Universidad Industrial de Santander
 
-# Práctica 2
-
-### Integrantes
-- **OSCAR DANIEL CASTELLANOS MARIÑO** - 2205024
-- **JUAN CAMILO GONZALEZ LEAL** - 2184682
-
-Escuela de Ingenierías Eléctrica, Electrónica y de Telecomunicaciones  
-Universidad Industrial de Santander
-
-### Fecha
-21 de marzo de 2025
 ### PRACTICA 2A:Fenómenos de canal en el osciloscopio
 
 **Objetivo**
@@ -73,11 +60,26 @@ Entonces podemos concluir que la afectacion del medio de trasmision afecta direc
 
 
 
-**Usando antenas, ¿cómo afecta la distancia entre el transmisor y el receptor a la amplitud de la señal medida? ¿Es posible compensar el fenómeno?**
+**Usando antenas, ¿cómo afecta la distancia entre el transmisor y el receptor a la amplitud de la señal medida? ¿Es posible compensar el fenómeno?:** La distancia afecta directamente la señal entre el trasmisor y receptor entre mas distancia halla entre estos dos la calidad de la señal trasmitida se ira degradando lo mismo si algun objeto se interpone entre el camino de estas dos, para hacer una mejor trasmision se deben colocar en paralelo y no de frente. 
+[Ver video en YouTube](https://www.youtube.com/shorts/KtmKC7uHtfA)
+
+**¿Qué modelo de canal básico describe mejor las mediciones obtenidas en la práctica?:** Consideramos que el modelo de canal mediante cable (alambrico ) es mejor para esta aplicacion, pero pues debemos tener en cuenta que estamos en un entorno casi que controaldo con las mejores condiciones por esto podemos recibir mejores respuesta o precision de las mediciones, pero el otro medio tambien se puede manejar de buena manera y dar buenas respuestas. todo depende de la aplicacion que se le vaya a dar de esta manera escogemos cual es mejor.
 
 
 
 
 
 
-**¿Qué modelo de canal básico describe mejor las mediciones obtenidas en la práctica?**
+
+
+
+
+
+
+
+
+
+
+
+
+
