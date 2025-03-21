@@ -55,8 +55,7 @@ como se evidencia su amplitud aumenta un delta, por eso pusimos 2 marcadores par
 | Señal | Señal sin desviacion (simulador) | Señal sin desviacion (osciloscopio) | Señal con desviacion (simulador)| Señal con desviacion (osciloscopio) |
 |-------|----------------------------------|-------------------------------------|---------------------------------|-------------------------------------|
 | CUADRADA | <img src="Actividad_2/10_1 _sin_variar_ frecuencia.jpg" width="300"> | <img src="Actividad_2/10_2 sin_variar_frecuencia.jpg" width="300"> | <img src="Actividad_2/11_1 frecuencia_20_offset.jpg" width="300"> | <img src="Actividad_2/11_2_frecuencia 20_offset.jpg" width="300"> |
-
-
+| TRIANGULAR | <img src="Actividad_2/12_1_sin_variar_freciencia_triangular.jpg" width="300"> | <img src="Actividad_2/12_2 sin_variar_freciencia_triangular.jpg" width="300"> | <img src="Actividad_2/13_1_offset_frecuencia_5000.jpg" width="300"> | <img src="Actividad_2/13_2 offset frecuencia 5000.jpg" width="300"> |
 
 
 
