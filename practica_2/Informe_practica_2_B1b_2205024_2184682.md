@@ -1,3 +1,36 @@
+## Actividad 1: Actividades de simulación de canal en GNU Radio
+
+### Objetivo
+
+Familiarizarse con algunos fenómenos de canal en un ambiente simulado.
+
+### Procedimiento
+
+**Simulación**
+   - Verificar equipos y elementos a utilizar (revisar manuales de ser necesario)
+   - Cargar el flujograma: [filters_flowgraph.grc](filters_flowgraph.grc).
+   - Configurar siempre la frecuencia de muestreo (`samp_rate`) en $25e6/2^n$ Hz`, donde $n$ es un número entero mayor a 2.
+   - Genere diferentes señales y observe el efecto de variar las frecuencias de corte del filtro.
+   - Analice el efecto del ruido en el dominio del tiempo y la frecuencia para al menos dos formas de onda distintas.
+   - Muestre con un ejemplo gráfico el umbral de máximo de ruido ante el cual considera que es posible recuperar cada forma de onda utilizando únicamente filtrado.
+
+### Preguntas Orientadoras
+
+- ¿Cuál es el efecto de filtrar las frecuencias altas de una señal?
+- ¿Qué sucede al filtrar muy cerca de la frecuencia fundamental de la señal?
+- ¿Cuál es el efecto de filtrar las frecuencias bajas de una señal?
+- ¿Qué ocurre al eliminar armónicos de una señal?
+- ¿Qué efecto tiene la desviación de frecuencia en la señal recibida? ¿Qué efecto(s) produce el filtro cuando la señal recibida se ve afectada por desviación de frecuencia?
+- ¿Cómo cuantificar la degradación de la señal al aumentar los niveles de ruido?
+- ¿Cómo se puede mejorar la relación señal a ruido en una señal?
+- ¿Cómo podría cuantificar la calidad de la señal recibida? Considere el caso de señales analógicas y digitales.
+
+### Evidencia
+
+*(Adjuntar las evidencias de la práctica en el Aula Virtual: capturas de pantalla, observaciones, cálculos o mediciones preliminares)*
+
+---
+
 
 ### PRACTICA 2B:Fenómenos de canal en el osciloscopio
 
@@ -139,7 +172,28 @@ Entonces podemos concluir que la afectacion del medio de trasmision afecta direc
 
 
 
+## Actividad 4: Efectos de los fenómenos de canal en la conversión de frecuencia
 
+### Objetivo
+
+Familiarizarse con los efectos de los fenómenos de un canal alámbrico e inalámbrico real en la conversión de frecuencia.
+
+### Procedimiento
+
+**Configurar el USRP 2920:**
+   - Configurar el flujograma [filters_flowgraph.grc](filters_flowgraph.grc) en GNU Radio para **transmitir y recibir ** una señal a través del USRP.
+   - Habilitar o deshabilitar los bloques correspondientes (`Channel Model`, `Throttle`, `UHD: USRP Sink`, `UHD: USRP Source`, `Virtual Sink`). Para esto, seleccione el bloque deseado y presione **E** (enable) o **D** (disable), respectivamente.
+   - Configurar siempre la frecuencia de muestreo (`samp_rate`) en $25e6/2^n$ Hz`, donde $n$ es un número entero mayor a 2. Verifique que la frecuencia de muestreo durante la ejecución, sea la misma que ha configurado en el flujograma.
+   - Compare los resultados al recibir la señal usando diferentes medios (aire o cable coaxial).
+
+### Preguntas Orientadoras
+
+- ¿Cómo se evidencian los diferentes fenómenos de canal en la señal recibida?
+- ¿Cómo se pueden mitigar los efectos del canal en la señal recibida?
+
+### Evidencia
+
+*(Adjuntar las evidencias de la práctica en el Aula Virtual: capturas de pantalla, observaciones, cálculos o mediciones preliminares)*
 
 
 
