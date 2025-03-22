@@ -315,6 +315,8 @@ Si las antenas transmisora y receptora no están correctamente alineadas en tér
 
 ### Transmiciones de la señal a una distancia constante
 
+
+
 | Variando frecuencia y una ganancia de 15 dB constante | |
 |---|---|
 | 100 MHz | <img src="Actividad_4/trasmitida_100MHz.jpg" width="300"> |
@@ -322,6 +324,13 @@ Si las antenas transmisora y receptora no están correctamente alineadas en tér
 | 400 MHz | <img src="Actividad_4/400Mhz.jpg" width="300"> |
 | 500 MHz | <img src="Actividad_4/500MHz.jpg" width="300"> |
 | 800 MHz | <img src="Actividad_4/800Mhz.jpg" width="300"> |
+
+Se graficaron los voltajes recibidos
+
+<img src="Actividad_4/variando frecuencia.png" width="300">
+
+De esta manera se puede observar que la mejor frecuencia para el envio de nuestra señal a una distancia constante fue de 400 MHz la cual se obtuvo un 18% de la señal enviada.
+
 
 | Variando ganancia con una frecuencia constante de 300 MHz | |
 |---|---|
@@ -332,9 +341,11 @@ Si las antenas transmisora y receptora no están correctamente alineadas en tér
 | 25 dB | <img src="Actividad_4/300_gan_25.jpg" width="300"> |
 | 30 dB | <img src="Actividad_4/300_gan_30.jpg" width="300"> |
 
+Se graficaron los voltajes recibidos
 
+<img src="Actividad_4/variando ganancia.png" width="300">
 
-
+La grafica tiene una tandencia exponencial.
 
 
 
