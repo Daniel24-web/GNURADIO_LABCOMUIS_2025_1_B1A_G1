@@ -81,7 +81,7 @@ como se evidencia su amplitud aumenta un delta, por eso pusimos 2 marcadores par
 
 **Determine la afectación de un medio de transmisión coaxial (usar cables largos) sobre una señal periódica operando a las capacidades máximas de muestreo del USRP.**
   - **NOTA:** La frecuencia de transmisión no debe superar los 500 MHz para ser observada en el osciloscopio. Para el experimento, considere las relaciones de muestreo correspondientes.
-**Usando cables coaxiales de diferentes longitudes, ¿cómo afecta la distancia entre el transmisor y el receptor a la amplitud de la señal medida?:**  Las capacidades maximas de muestreo para nuestro USRP son de 450 MHz. para esto configuramos la frecuecnia carrier en 450 MHz usamos primero un cable corto de aproximadamente de 60 cm t en el otro caso usamos uno largo de aproximadamente de 27 metros.
+**Usando cables coaxiales de diferentes longitudes, ¿cómo afecta la distancia entre el transmisor y el receptor a la amplitud de la señal medida?:**  Las capacidades maximas de muestreo para nuestro USRP son de 450 MHz. para esto configuramos la frecuecnia carrier en 450 MHz usamos primero un cable corto de aproximadamente de 60 cm t en el otro caso usamos uno largo de aproximadamente de 22 metros.
 Esta distancia atenua la señal entre el trasmisor y receptor reduciendo la amplitud de la señal, aplanando mas la señal y siedno un poco mas dificl de analizarla.
 Entonces podemos concluir que la afectacion del medio de trasmision afecta directamente la amplitud de la señal entre mas argo sea mas la atenuara 
 
@@ -136,39 +136,48 @@ El efeco el cual logramos identificar es que el piso de ruido se sube, por ejemp
 
 **¿La relación señal a ruido creada intencionalmente desde el computador se amplifica o se reduce en la señal observada en el analizador de espectro?:** La relacion señal  ruido creada intencionalmente se refleja en el analizador de espectros mas pequeña. es inversa a lo visto en el osciloscopio 
 
-**Demuestre ¿cómo se puede mejorar la relación señal a ruido en una señal?:** La relacion señal a ruido se puede mejorar al aumentar su amplitud desde el simulador ya que si aumento la amplitud directamente aumenta la potencia de la señal y se podra identificar mejor ya que la potencia de la señal es proporcional al cuadrado de la amplitud. para nuestro caso lo mejoramos con una amplitud de 0.3
+**Adjunte la evidencia de la medición de la relación señal a ruido de dos formas de onda distintas.:** 
+Para este caso se uso una onda cuadrada y una trigular para los dos casos se hicieron prubeas con ruido y sin ruido ya que gracias al simulador nos permitimos poder hacerlo. por ejemplo en la señal sin ruido del analizador podemos ver la relacion señal a ruido o SNR mediante el marcador el cual nos indica la potencia de la señal aproximadamente -3 db y el piso de ruido (promedio ) aproximadamente -75 db y mediente la diferencia de estos dos obtenemos la relacion señal a ruido y lo mismo aplica para el ejemplo con ruido en la señal simulada
 
-| Señal | Señal con ruido (simulador) | Señal con ruido (osciloscopio) | Señal con ruido mejorada (simulador)| Señal con ruido mejorada (osciloscopio) |
+
+| Señal | Señal sin ruido (simulador) | Señal sin ruido (analizador) | Señal con ruido  (simulador)| Señal con ruido (analizador ) |
 |-------|-----------------------------|--------------------------------|-------------------------------------|-----------------------------------------|
-| TRIANGULAR | <img src="Actividad_2/7_ruido.jpg" width="300"> | <img src="Actividad_2/6.jpg" width="300"> | <img src="Actividad_2/9_ruido _amplitud 0_3.jpg" width="300"> | <img src="Actividad_2/8.jpg" width="300"> |
+| TRIANGULAR | <img src="Actividad_3/ruido_1.jpg" width="300"> | <img src="Actividad_3/ruido_1_2.jpg" width="300"> | <img src="Actividad_3/ruido_2.jpg" width="300"> |  <img src="Actividad_3/ruido_2_1.jpg" width="300"> |
+| CUADRADA | <img src="Actividad_3/ruido_c1.jpg" width="300"> | <img src="Actividad_3/ruido_c2.jpg" width="300"> | <img src="Actividad_3/ruido_c3.jpg" width="300"> | <img src="Actividad_3/ruido_c4.jpg" width="300"> |
 
-**¿Cómo se evidencia el fenómeno de desviación de frecuencia en el osciloscopio? Evidenciar al menos con dos formas de onda:** Lo que se logra evidenciar de este fenomeno es que la señal al aumentar esta desviacion de frecuencia aumenta un poco sus picos por lo tanto aumento su amplitud muy poco pero se bede a que la señal se comprime o se expande un poco debido a la desviacion de frecuencia 
 
-| Señal | Señal sin desviacion (simulador) | Señal sin desviacion (osciloscopio) | Señal con desviacion (simulador)| Señal con desviacion (osciloscopio) |
+
+
+
+
+
+**¿Cómo se evidencia el fenómeno de desviación de frecuencia en el analizador de espectro? Evidenciar al menos con dos formas de onda:** Lo que se logra evidenciar que en el caso del analizador de espectros lo que provoca es un retardo o un adelanto en la señal, como su nombre lo indica la desvia en frecuencia en el ejemplo aplicamos una desviacion de 10000 de offset y podemos ver como se desplaza sobre su eje 10000 Hz 
+
+| Señal | Señal sin desviacion (simulador) | Señal sin desviacion (analizador) | Señal con desviacion (simulador)| Señal con desviacion (analizador) |
 |-------|----------------------------------|-------------------------------------|---------------------------------|-------------------------------------|
-| CUADRADA | <img src="Actividad_2/10_1 _sin_variar_ frecuencia.jpg" width="300"> | <img src="Actividad_2/10_2 sin_variar_frecuencia.jpg" width="300"> | <img src="Actividad_2/11_1 frecuencia_20_offset.jpg" width="300"> | <img src="Actividad_2/11_2_frecuencia 20_offset.jpg" width="300"> |
-| TRIANGULAR | <img src="Actividad_2/12_1_sin_variar_freciencia_triangular.jpg" width="300"> | <img src="Actividad_2/12_2 sin_variar_freciencia_triangular.jpg" width="300"> | <img src="Actividad_2/13_1_offset_frecuencia_5000.jpg" width="300"> | <img src="Actividad_2/13_2 offset frecuencia 5000.jpg" width="300"> |
+| CUADRADA | <img src="Actividad_3/cuadrada_sindesviar.jpg" width="300"> | <img src="Actividad_3/sindesviar_analizador.jpg" width="300"> | <img src="Actividad_3/desviada_simulador.jpg" width="300"> | <img src="Actividad_3/desviada_analizador.jpg" width="300"> |
+| TRIANGULAR | <img src="Actividad_3/triangular_nodesviar.jpg" width="300"> | <img src="Actividad_3/analizador_nodesviar.jpg" width="300"> | <img src="Actividad_3/triangular_desviada.jpg" width="300"> | <img src="Actividad_3/analizador_desviada.jpg" width="300"> |
 
 
 
-**Determine la afectación de un medio de transmisión coaxial (usar cables largos) sobre una señal periódica operando a las capacidades máximas de muestreo del USRP.**
-  - **NOTA:** La frecuencia de transmisión no debe superar los 500 MHz para ser observada en el osciloscopio. Para el experimento, considere las relaciones de muestreo correspondientes.
-**Usando cables coaxiales de diferentes longitudes, ¿cómo afecta la distancia entre el transmisor y el receptor a la amplitud de la señal medida?:**  Las capacidades maximas de muestreo para nuestro USRP son de 450 MHz. para esto configuramos la frecuecnia carrier en 450 MHz usamos primero un cable corto de aproximadamente de 60 cm t en el otro caso usamos uno largo de aproximadamente de 27 metros.
-Esta distancia atenua la señal entre el trasmisor y receptor reduciendo la amplitud de la señal, aplanando mas la señal y siedno un poco mas dificl de analizarla.
-Entonces podemos concluir que la afectacion del medio de trasmision afecta directamente la amplitud de la señal entre mas argo sea mas la atenuara 
+**Determine la afectación de un medio de transmisión coaxial (usar cables largos) sobre una señal periódica operando a las capacidades máximas de muestreo del USRP**
+  - **NOTA:** La frecuencia de transmisión no debe superar los 1000 MHz para ser observada en el analizador. Para el experimento, considere las relaciones de muestreo correspondientes.
+- **Usando cables coaxiales de diferentes longitudes, ¿cómo afecta la distancia entre el transmisor y el receptor a la amplitud de la señal medida?**  para esto configuramos la frecuecnia carrier en 990 MHz usamos primero un cable corto de aproximadamente de 60 cm t en el otro caso usamos uno largo de aproximadamente de 22 metros.
+Esta distancia atenua la señal entre el trasmisor y receptor reduciendo la amplitud de la señal, en este caso la potencia podemos ver que con el cable corto la potencia es mayor a comparacion que con el cable largo, se evidencia que la señal pierde potencia.
 
-| Señal con cable corto | Señal con cable largo |
-|-----------------------|-----------------------|
-| <img src="Actividad_2/14_potencia_cable_normal.jpg" width="300"> | <img src="Actividad_2/15_potencia_cable_largo.jpg" width="300"> |
-
+| Señal (simulador)  | Señal con cable corto (analizador )| Señal con cable largo (analizador) | tipo de ccable |
+|--------------------|------------------------------------|------------------------------------|----------------|
+| <img src="Actividad_3/cables_1_2.jpg" width="300">  | <img src="Actividad_3/cable_corto.jpg" width="300"> | <img src="Actividad_3/cable_largo.jpg" width="300"> | <img src="Actividad_3/cable_usado.jpg" width="300"> | 
 
 
+**Usando antenas, ¿cómo afecta la distancia entre el transmisor y el receptor a la amplitud de la señal medida? ¿Es posible compensar el fenómeno?:** La distancia afecta directamente la señal entre el trasmisor y receptor entre mas distancia halla entre estos dos la calidad de la señal trasmitida se ira degradando lo mismo si algun objeto se interpone entre el camino de estas dos, para hacer una mejor trasmision se deben colocar en paralelo y no de frente, para el caso de las antenas por ejemplo se debe buscar la configuracion geometrica correcta para una buena captacion de la señal, si las dos antenas apuntan directamente enre ellas o si una esta mas alta que la otra y demas escenarios posibles, aqui se mostrara la evidencia de algunos. como podemos observar si las antenas estan mas cerca entre ellas y tendra una mejor ganancias la señal recibida a diferencia si la señal esta obstruida por algun objeto o esta mas lejos. una posible solucion es aumentar la ganancia desde el simulador, en distancia muy largas es recomendable usar repetidores
+
+| Antenas Perpediculares | Antenas mas cerca | Antenas obstruidas pro objeto | 
+|------------------------|-------------------|-------------------------------|
+| <img src="Actividad_3/perpendicular.jpg" width="300"> : <img src="Actividad_3/perpendicular_1.jpg" width="300">  |  <img src="Actividad_3/mas_cerca.jpg" width="300">  |   <img src="Actividad_3/obstruida.jpg" width="300">  | 
 
 
-**Usando antenas, ¿cómo afecta la distancia entre el transmisor y el receptor a la amplitud de la señal medida? ¿Es posible compensar el fenómeno?:** La distancia afecta directamente la señal entre el trasmisor y receptor entre mas distancia halla entre estos dos la calidad de la señal trasmitida se ira degradando lo mismo si algun objeto se interpone entre el camino de estas dos, para hacer una mejor trasmision se deben colocar en paralelo y no de frente. 
-[Ver video en YouTube](https://www.youtube.com/shorts/KtmKC7uHtfA)
-
-**¿Qué modelo de canal básico describe mejor las mediciones obtenidas en la práctica?:** Consideramos que el modelo de canal mediante cable (alambrico ) es mejor para esta aplicacion, pero pues debemos tener en cuenta que estamos en un entorno casi que controaldo con las mejores condiciones por esto podemos recibir mejores respuesta o precision de las mediciones, pero el otro medio tambien se puede manejar de buena manera y dar buenas respuestas. todo depende de la aplicacion que se le vaya a dar de esta manera escogemos cual es mejor.
+**¿Qué modelo de canal básico describe mejor las mediciones obtenidas en la práctica?:** Consideramos que el modelo de canal mediante antena (inalámbrica ? ) es mejor para esta aplicacion, pero pues debemos tener en cuenta que estamos en un entorno casi que controaldo con las mejores condiciones por esto podemos recibir mejores respuesta o precision de las mediciones, tambien porque el analizador de espectros nos responde de manera mas efectiva para este medio, pero al igual que la actividad anterior depende de la aplicacion. En este caso fue mas practico poder mover rapidamente la antena en un lado a otro para sabr como respondia el analizador.
 
 
 
