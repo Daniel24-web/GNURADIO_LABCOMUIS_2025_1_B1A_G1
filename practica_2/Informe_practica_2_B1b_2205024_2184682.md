@@ -22,26 +22,32 @@ Cuando se eliminan las frecuencias altas de una señal periódica mediante un fi
 
 Al tener una señal triangular de 2kHz esta posee varios armónicos los cuales se encuentran en 2kHz, 6kHz, 10kHz y 14kHz con esto podemos colocar un filtro pasa banda el cual va a tener una frecuencia de corte en 1kHz y vamos a ir variando la frecuencia de corte alta hasta los 4kHz, haciendo esta variación podemos observar como la señal se va suavizando llegando a observarse como una sinusoidal ya que luego del filtrado en el corte de 4 kHz solo se puede observar el primer armónico.
 
-
+<img src="Actividad_1/4.jpg" width="300">
 
 
 - ¿Qué sucede al filtrar muy cerca de la frecuencia fundamental de la señal
 
 La señal se comienza a perder picos haciendo que se suavice la señal, de esta manera, si la señal fundamental esta en 900Hz y la frecuencia de corte baja se encuentra en 1kHz, la señal se atenua y se pierde informacion, es por esto que se presenta en la parte izquierda de la visualizacion de la simulacion en el GNU radio.
 
-
+<img src="Actividad_1/1.jpg" width="300">
 
 - ¿Cuál es el efecto de filtrar las frecuencias bajas de una señal?
 
 Al aplicar un filtro pasa-altas, se eliminan las frecuencias bajas, incluyendo la fundamental, esto hace que la señal pierda su estructura principal y se transforme en una señal de alta frecuencia con menos contenido energético. En el caso extremo, la señal podría degradarse en solo ruido o picos abruptos.
 
-
+<img src="Actividad_1/2.jpg" width="300">
 
 - ¿Qué ocurre al eliminar armónicos de una señal?
 
 Si se eliminan los primeros armónicos y se mantienen solo los de alta frecuencia, la señal resultante tendrá una apariencia más dentada o errática, ya que los armónicos superiores contribuyen a los detalles finos. Esto puede ser útil en aplicaciones como el análisis de bordes en imágenes o en la detección de transitorios en señales eléctrica, ahora si se eliminan todos los armonicos de una señal esta deja ser observada.
 
+<img src="Actividad_1/1.jpg" width="300">
+
 - ¿Qué efecto tiene la desviación de frecuencia en la señal recibida? ¿Qué efecto(s) produce el filtro cuando la señal recibida se ve afectada por desviación de frecuencia?
+
+En el siguiente video se puede observar como se aumenta la desviacion de frecuencia a una señal triangular [Ver video en YouTube](https://www.youtube.com/shorts/CbH37UvfXX4)
+
+
 
 ### Caso 1: Modulación en Frecuencia (FM)
 
@@ -76,6 +82,16 @@ Para cuantificar la degradación de una señal conforme aumenta el ruido, se emp
 | Usar filtros adecuados | los filtros pasa-bajas, pasa-altas o pasa-banda pueden eliminar componentes de ruido en frecuencias no deseadas. | 
 | Uso de antenas direccionales o mejoras en la transmisión | En sistemas inalámbricos, el uso de antenas de mayor ganancia o diversificación espacial puede mejorar el SNR. |
 
+Tenemos en las siguientes imagenes una relacion señal a ruido de 10.97 dB ya que la Pseñal es de 0.5 y la Pruido es de 0.04
+
+<img src="Actividad_1/5.jpg" width="300">
+<img src="Actividad_1/6.jpg" width="300">
+
+En los siguientes videos podemos observar como varian las señales al agregarles ruido:
+
+[Ver video en YouTube](https://www.youtube.com/shorts/V8JfIzF6nkg)
+[Ver video en YouTube](https://www.youtube.com/shorts/_NDFam6kdB8)
+[Ver video en YouTube](https://www.youtube.com/shorts/Tojn3dkPsXc)
 
 - ¿Cómo podría cuantificar la calidad de la señal recibida? Considere el caso de señales analógicas y digitales.
 
