@@ -267,20 +267,53 @@ Familiarizarse con los efectos de los fenómenos de un canal alámbrico e inalá
 
 ### Preguntas Orientadoras
 
+Durante la realizacion del laboratorio se configurarion dos antenas, una para transmitir y otra para recibir, se pueden presentar diversos fenómenos de canal que afectan la propagación de la señal. Aunque el entorno de un laboratorio suele ser más controlado que el mundo real, aún pueden aparecer efectos significativos.
+
+1. Atenuación de la señal
+La potencia de la señal disminuye con la distancia entre las antenas debido a la pérdida de propagación en espacio libre (Free-Space Path Loss, FSPL). Esta pérdida se modela con la ecuación:
+
+FSLP(dB) = 20log (d) + 20log (f) + 20log (4pi/c)
+
+donde:
+d es la distancia entre las antenas.
+
+f es la frecuencia de transmisión.
+
+c es la velocidad de la luz.
+
+
+2. Reflexión
+Ocurre cuando la onda electromagnética encuentra superficies como paredes, mesas metálicas o equipos electrónicos y rebota en ellas. La reflexión puede provocar interferencias constructivas o destructivas en la señal recibida, dependiendo de la fase con la que las ondas reflejadas lleguen al receptor.
+
+3. Difracción
+Si hay obstáculos en el laboratorio (como computadoras, personas o mobiliario), la señal puede doblarse alrededor de estos objetos y aún llegar al receptor, aunque con menor intensidad. Este fenómeno es más notable en frecuencias bajas.
+
+4. Dispersión (Scattering)
+Se produce cuando la señal incide sobre superficies rugosas o pequeños objetos (como cables o componentes electrónicos), lo que genera múltiples ondas dispersadas en diferentes direcciones. En un laboratorio, esto puede ocurrir con equipos de medición, racks metálicos o placas de circuitos.
+
+5. Multitrayectoria (Multipath Fading)
+En un entorno cerrado como un laboratorio, la señal puede llegar al receptor por múltiples caminos debido a reflexiones y difracciones. Algunas de estas trayectorias pueden estar en fase (sumando la señal) o en desfase (cancelándose parcialmente), lo que genera fading o desvanecimiento selectivo en ciertas frecuencias.
+
+6. Ruido y perturbaciones electromagnéticas
+
+Equipos electrónicos funcionando (osciloscopios, fuentes de alimentación, ordenadores).
+
+Redes Wi-Fi o señales de radiofrecuencia cercanas.
+
+Ruido térmico y electrónico en los propios dispositivos de transmisión y recepción.
+
+7. Desalineación de antenas
+Si las antenas transmisora y receptora no están correctamente alineadas en términos de orientación o polarización, se pueden generar pérdidas adicionales en la señal recibida. Esto es especialmente crítico en sistemas de ondas milimétricas o enlaces direccionales.
+
+
+| ### ¿Cómo se pueden mitigar los efectos del canal en la señal recibida? | |
+|---|---|
+| Atenuacion de señal | Para dar solucion a este se aumento la potencia de la señal para que pueda ser recibida de una mejor manera sin que se vea tan afectada por la atenuacion del espacio libre, ademas de esta otra solucion que se pudo observar fue acercar las antenas, esto para reducir la distancia y por ende, reducir la cantidad de atenuacion de espacio libre. |
+| Ruido e interferencias | utilizando filtros para reducir las señales no deseadas |
+| Difraccion y dispercion | Dandole solucion se evitaron los obstaculos entre las antenas para evitar perdidas, ademas de el uso de frecuencias mas bajas. |
+| Desalineacion de antenas | Se observo que al tener las antenas de manera perpendicular o enfrentadas se pierde mucha potencia al recibir la señal |
+
+
+
 - ¿Cómo se evidencian los diferentes fenómenos de canal en la señal recibida?
-- ¿Cómo se pueden mitigar los efectos del canal en la señal recibida?
-
-### Evidencia
-
-*(Adjuntar las evidencias de la práctica en el Aula Virtual: capturas de pantalla, observaciones, cálculos o mediciones preliminares)*
-
-
-
-
-
-
-
-
-
-
 
