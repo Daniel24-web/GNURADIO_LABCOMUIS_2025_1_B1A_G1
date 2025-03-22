@@ -311,9 +311,31 @@ Si las antenas transmisora y receptora no están correctamente alineadas en tér
 | Atenuacion de señal | Para dar solucion a este se aumento la potencia de la señal para que pueda ser recibida de una mejor manera sin que se vea tan afectada por la atenuacion del espacio libre, ademas de esta otra solucion que se pudo observar fue acercar las antenas, esto para reducir la distancia y por ende, reducir la cantidad de atenuacion de espacio libre. |
 | Ruido e interferencias | utilizando filtros para reducir las señales no deseadas |
 | Difraccion y dispercion | Dandole solucion se evitaron los obstaculos entre las antenas para evitar perdidas, ademas de el uso de frecuencias mas bajas. |
-| Desalineacion de antenas | Se observo que al tener las antenas de manera perpendicular o enfrentadas se pierde mucha potencia al recibir la señal |
+| Desalineacion de antenas | Se observo que al tener las antenas de manera perpendicular o enfrentadas se pierde mucha potencia al recibir la señal, solucionando esto colocando las antenas de manera que se pueda recibir de buena manera la señal. |
+
+### Transmiciones de la señal a una distancia constante
+
+| Variando frecuencia y una ganancia de 15 dB constante | |
+|---|---|
+| 100 MHz | <img src="Actividad_4/trasmitida_100MHz.jpg" width="300"> |
+| 300 MHz | <img src="Actividad_4/300MHz.jpg" width="300"> |
+| 400 MHz | <img src="Actividad_4/400Mhz.jpg" width="300"> |
+| 500 MHz | <img src="Actividad_4/500MHz.jpg" width="300"> |
+| 800 MHz | <img src="Actividad_4/800Mhz.jpg" width="300"> |
+
+| Variando ganancia con una frecuencia constante de 300 MHz | |
+|---|---|
+| 5 dB | <img src="Actividad_4/300_gan_5.jpg" width="300"> |
+| 10 dB | <img src="Actividad_4/300_gan_10.jpg" width="300"> |
+| 15 dB | <img src="Actividad_4/300MHz.jpg" width="300"> |
+| 20 dB | <img src="Actividad_4/300_gan_20.jpg" width="300"> |
+| 25 dB | <img src="Actividad_4/300_gan_25.jpg" width="300"> |
+| 30 dB | <img src="Actividad_4/300_gan_30.jpg" width="300"> |
 
 
 
-- ¿Cómo se evidencian los diferentes fenómenos de canal en la señal recibida?
+
+
+
+
 
