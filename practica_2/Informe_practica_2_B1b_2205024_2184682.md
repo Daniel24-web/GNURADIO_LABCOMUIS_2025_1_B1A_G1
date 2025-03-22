@@ -315,7 +315,9 @@ Si las antenas transmisora y receptora no están correctamente alineadas en tér
 
 ### Transmiciones de la señal a una distancia constante
 
+En la siguiente imagen se observa la distancia a la cual se tomaron todos los siguientes datos:
 
+<img src="Actividad_4/alejado.jpg" width="300">
 
 | Variando frecuencia y una ganancia de 15 dB constante | |
 |---|---|
@@ -347,6 +349,11 @@ Se graficaron los voltajes recibidos
 
 La grafica tiene una tandencia exponencial.
 
+Para obtener mas datos se decidio alejar mas las antenas entre si manteniendo una frecuencia de 300 MHz y con una ganancia de 30 dB a lo que se pudo obtener aproximadamente 120 mV lo cual corresponde a un aumento de aprox 20 mV con respecto a la señal inicial la cual fue de 100 mV
+
+<img src="Actividad_4/alejado_300_gan_30.jpg" width="300">
+
+<img src="Actividad_4/mas_alejado.jpg" width="300">
 
 
 
