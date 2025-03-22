@@ -17,19 +17,89 @@ Familiarizarse con algunos fenómenos de canal en un ambiente simulado.
 ### Preguntas Orientadoras
 
 - ¿Cuál es el efecto de filtrar las frecuencias altas de una señal?
-- ¿Qué sucede al filtrar muy cerca de la frecuencia fundamental de la señal?
+
+Cuando se eliminan las frecuencias altas de una señal periódica mediante un filtro pasa-bajas, la señal resultante pierde detalles y se suaviza. Esto ocurre porque los armónicos de alta frecuencia contienen la información sobre los cambios bruscos en la forma de onda. Si el filtrado es extremo, la señal puede convertirse en una onda senoidal pura con la frecuencia fundamental.
+
+Al tener una señal triangular de 2kHz esta posee varios armónicos los cuales se encuentran en 2kHz, 6kHz, 10kHz y 14kHz con esto podemos colocar un filtro pasa banda el cual va a tener una frecuencia de corte en 1kHz y vamos a ir variando la frecuencia de corte alta hasta los 4kHz, haciendo esta variación podemos observar como la señal se va suavizando llegando a observarse como una sinusoidal ya que luego del filtrado en el corte de 4 kHz solo se puede observar el primer armónico.
+
+
+
+
+- ¿Qué sucede al filtrar muy cerca de la frecuencia fundamental de la señal
+
+La señal se comienza a perder picos haciendo que se suavice la señal, de esta manera, si la señal fundamental esta en 900Hz y la frecuencia de corte baja se encuentra en 1kHz, la señal se atenua y se pierde informacion, es por esto que se presenta en la parte izquierda de la visualizacion de la simulacion en el GNU radio.
+
+
+
 - ¿Cuál es el efecto de filtrar las frecuencias bajas de una señal?
+
+Al aplicar un filtro pasa-altas, se eliminan las frecuencias bajas, incluyendo la fundamental, esto hace que la señal pierda su estructura principal y se transforme en una señal de alta frecuencia con menos contenido energético. En el caso extremo, la señal podría degradarse en solo ruido o picos abruptos.
+
+
+
 - ¿Qué ocurre al eliminar armónicos de una señal?
+
+Si se eliminan los primeros armónicos y se mantienen solo los de alta frecuencia, la señal resultante tendrá una apariencia más dentada o errática, ya que los armónicos superiores contribuyen a los detalles finos. Esto puede ser útil en aplicaciones como el análisis de bordes en imágenes o en la detección de transitorios en señales eléctrica, ahora si se eliminan todos los armonicos de una señal esta deja ser observada.
+
 - ¿Qué efecto tiene la desviación de frecuencia en la señal recibida? ¿Qué efecto(s) produce el filtro cuando la señal recibida se ve afectada por desviación de frecuencia?
+
+### Caso 1: Modulación en Frecuencia (FM)
+
+•	En la modulación en frecuencia (FM), la frecuencia de la señal portadora varía en función de la señal moduladora.
+•	Si la señal de entrada es una onda senoidal de baja frecuencia, la frecuencia de la portadora oscila alrededor de su frecuencia central.
+
+
+### Caso 2: Inestabilidad en un Oscilador (Drift de Frecuencia)
+•	Los osciladores usados en transmisores o receptores pueden cambiar de frecuencia debido a cambios de temperatura, envejecimiento de componentes o interferencias electromagnéticas.
+
+| Efecto del filtro ante una desviación de frecuencia | |
+|---|---|
+| Atenuación de la señal | Si la desviación de frecuencia es lo suficientemente grande, parte de la señal puede quedar fuera del ancho de banda del filtro, causando una disminución de la potencia de la señal recibida. |
+| Distorsión de fase | Los filtros pueden introducir retardos de fase que afectan la alineación temporal de la señal. |
+| Pérdida de información en sistemas modulados | En sistemas con modulación digital o analógica, la pérdida de componentes de frecuencia esenciales debido a la acción del filtro puede resultar en una recuperación incorrecta de la información original. |
+
+
+
 - ¿Cómo cuantificar la degradación de la señal al aumentar los niveles de ruido?
+
+Para cuantificar la degradación de una señal conforme aumenta el ruido, se emplea principalmente la relación señal a ruido (SNR, Signal-to-Noise Ratio), que se expresa en decibeles (dB).
+
+ SNR = 10 log (Pseñal/Pruido) [ dB ]
+
+ A medida que el ruido aumenta, el SNR disminuye, lo que indica una mayor degradación de la señal. Otra métrica útil en comunicaciones digitales es la tasa de error de bits (BER, Bit Error Rate), que mide la fracción de bits recibidos incorrectamente en comparación con el total transmitido. En el caso de señales analógicas, se puede analizar la relación señal a distorsión y ruido (SINAD, Signal-to-Noise and Distortion Ratio) o la relación de error cuadrático medio (MSE, Mean Squared Error) con respecto a una señal de referencia.
+
 - ¿Cómo se puede mejorar la relación señal a ruido en una señal?
+
+| Mejora de la relación señal a ruido en una señal | |
+|---|---|
+| Aumentar la potencia de la señal transmitida | Si la señal es más fuerte en comparación con el ruido, el receptor podrá interpretarla con mayor claridad. |
+| Usar filtros adecuados | los filtros pasa-bajas, pasa-altas o pasa-banda pueden eliminar componentes de ruido en frecuencias no deseadas. | 
+| Uso de antenas direccionales o mejoras en la transmisión | En sistemas inalámbricos, el uso de antenas de mayor ganancia o diversificación espacial puede mejorar el SNR. |
+
+
 - ¿Cómo podría cuantificar la calidad de la señal recibida? Considere el caso de señales analógicas y digitales.
 
-### Evidencia
+Para señales analógicas:
 
-*(Adjuntar las evidencias de la práctica en el Aula Virtual: capturas de pantalla, observaciones, cálculos o mediciones preliminares)*
+*SNR (Signal-to-Noise Ratio)*
 
----
+*SINAD (Signal-to-Noise and Distortion Ratio)*
+
+*THD (Total Harmonic Distortion)*
+
+*MSE (Mean Squared Error) o PSNR (Peak Signal-to-Noise Ratio)*
+
+Para señales digitales:
+
+*BER (Bit Error Rate)*
+
+*EVM (Error Vector Magnitude)*
+
+*MER (Modulation Error Ratio)*
+
+*Tasa de paquetes perdidos (Packet Loss Rate)*
+
+
 
 
 ### PRACTICA 2B:Fenómenos de canal en el osciloscopio
