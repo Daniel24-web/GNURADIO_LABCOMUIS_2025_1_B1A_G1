@@ -381,31 +381,31 @@ Se realiza la configuracion dandonos como resultado la evidencia:
 
    - Evalúe la respuesta en frecuencia del canal midiendo los cambios de ganancia del sistema cuando varía la frecuencia de portadora.
 
-<img src="parte_c/Actividad_3/5_respuesta en frecuencia del canal/1.jpg" width="300">
-<img src="parte_c/Actividad_3/5_respuesta en frecuencia del canal/2.jpg" width="300">
-<img src="parte_c/Actividad_3/5_respuesta en frecuencia del canal/3.jpg" width="300">
-<img src="parte_c/Actividad_3/5_respuesta en frecuencia del canal/4.jpg" width="300">
-<img src="parte_c/Actividad_3/5_respuesta en frecuencia del canal/5.jpg" width="300">
-<img src="parte_c/Actividad_3/5_respuesta en frecuencia del canal/6.jpg" width="300">
-<img src="parte_c/Actividad_3/5_respuesta en frecuencia del canal/7.jpg" width="300">
-<img src="parte_c/Actividad_3/5_respuesta en frecuencia del canal/8.jpg" width="300">
+<img src="parte_c/Actividad_3/5_res_freq_canal/1.jpg" width="300">
+<img src="parte_c/Actividad_3/5_res_freq_canal/2.jpg" width="300">
+<img src="parte_c/Actividad_3/5_res_freq_canal/3.jpg" width="300">
+<img src="parte_c/Actividad_3/5_res_freq_canal/4.jpg" width="300">
+<img src="parte_c/Actividad_3/5_res_freq_canal/5.jpg" width="300">
+<img src="parte_c/Actividad_3/5_res_freq_canal/6.jpg" width="300">
+<img src="parte_c/Actividad_3/5_res_freq_canal/7.jpg" width="300">
+<img src="parte_c/Actividad_3/5_res_freq_canal/8.jpg" width="300">
 
 4. **Medición con el Osciloscopio**:
 
-<img src="parte_c/Actividad_3/6_medidas de osciloscopio/1.jpg" width="300">
-<img src="parte_c/Actividad_3/6_medidas de osciloscopio/2.jpg" width="300">
-<img src="parte_c/Actividad_3/6_medidas de osciloscopio/3.jpg" width="300">
-<img src="parte_c/Actividad_3/6_medidas de osciloscopio/4.jpg" width="300">
-<img src="parte_c/Actividad_3/6_medidas de osciloscopio/5.jpg" width="300">
-<img src="parte_c/Actividad_3/6_medidas de osciloscopio/6.jpg" width="300">
-<img src="parte_c/Actividad_3/6_medidas de osciloscopio/7.jpg" width="300">
-<img src="parte_c/Actividad_3/6_medidas de osciloscopio/8.jpg" width="300">
-<img src="parte_c/Actividad_3/6_medidas de osciloscopio/9.jpg" width="300">
-<img src="parte_c/Actividad_3/6_medidas de osciloscopio/10.jpg" width="300">
-<img src="parte_c/Actividad_3/6_medidas de osciloscopio/11.jpg" width="300">
-<img src="parte_c/Actividad_3/6_medidas de osciloscopio/12.jpg" width="300">
-<img src="parte_c/Actividad_3/6_medidas de osciloscopio/13.jpg" width="300">
-<img src="parte_c/Actividad_3/6_medidas de osciloscopio/14.jpg" width="300">
+<img src="parte_c/Actividad_3/6_medidas_osci/1.jpg" width="300">
+<img src="parte_c/Actividad_3/6_medidas_osci/2.jpg" width="300">
+<img src="parte_c/Actividad_3/6_medidas_osci/3.jpg" width="300">
+<img src="parte_c/Actividad_3/6_medidas_osci/4.jpg" width="300">
+<img src="parte_c/Actividad_3/6_medidas_osci/5.jpg" width="300">
+<img src="parte_c/Actividad_3/6_medidas_osci/6.jpg" width="300">
+<img src="parte_c/Actividad_3/6_medidas_osci/7.jpg" width="300">
+<img src="parte_c/Actividad_3/6_medidas_osci/8.jpg" width="300">
+<img src="parte_c/Actividad_3/6_medidas_osci/9.jpg" width="300">
+<img src="parte_c/Actividad_3/6_medidas_osci/10.jpg" width="300">
+<img src="parte_c/Actividad_3/6_medidas_osci/11.jpg" width="300">
+<img src="parte_c/Actividad_3/6_medidas_osci/12.jpg" width="300">
+<img src="parte_c/Actividad_3/6_medidas_osci/13.jpg" width="300">
+<img src="parte_c/Actividad_3/6_medidas_osci/14.jpg" width="300">
 
 
 
